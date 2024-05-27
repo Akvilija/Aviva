@@ -4,12 +4,15 @@
   box-sizing: border-box;
 }
 
-.header-wrapper img {
-  height: 100px;
+img {
+  width: 100px;
+  display: grid;
+  align-self: center;
 }
 
 .header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background-color: black;
 }
@@ -22,16 +25,20 @@
 
 .nav {
   background-color: yellow;
+}
+
+.header-aviva {
   display: flex;
+  flex-direction: column;
+
   padding-left: 250px;
   padding-right: 250px;
-  justify-content: space-between;
 }
 
 .nav ul {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
 }
 
 .nav ul li {
@@ -41,11 +48,11 @@
 td,
 th {
   border: 2px solid red;
+  padding-left: 220px;
 }
 
 table {
   border-collapse: collapse;
-  width: 50%;
 }
 
 tfoot {
@@ -57,14 +64,11 @@ tbody tr {
   line-height: 25px;
 }
 
-footer {
-  background-color: yellowgreen;
-}
-
 .section-about-center {
   padding-left: 250px;
   padding-right: 250px;
   text-align: justify;
+  padding-bottom: 10px;
 }
 
 .button {
@@ -82,4 +86,34 @@ footer {
 
 .go-down {
   text-decoration: underline;
+}
+
+.tables {
+  justify-content: center;
+  padding-left: 250px;
+  background-color: rgb(8, 8, 70);
+  color: white;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.pavarde-padding {
+  padding-right: 150px;
+}
+
+.contacts {
+  padding-left: 250px;
+  padding-top: 10px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+footer {
+  display: flex;
+  background-color: yellowgreen;
+  justify-content: center;
 }
